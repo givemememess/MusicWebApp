@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@model IEnumerable<Track>
+
+@foreach (Track track in Model)
+{
+    <div class="m-music-player">
+        <div class="m-content-num2">
+            <div class="card" style="width: 15rem;">
+                <img src="@track.Photo" class="card-img-top" style="width: 210px">
+                <div class="card-body">
+                    <div>
+                        <b class="card-title">@track.Name</b>
+                        @if (track.Information != null)
+                        {
+                            <a href="@track.Information"><i class="fas fa-info-circle"></i></a>
+                        }
+                        <i class="fa fa-youtube-play float-right" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <b class="card-text" style="opacity: 0.6">@track.Producer.Name</b>
+                        @if (track.Producer.Information != null)
+                        {
+                            <a href="@track.Producer.Information"><i class="fas fa-info-circle"></i></a>
+                        }
+                    </div>
+
+                    <audio controls class="audio">
+                        <source src="@track.Music" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+}

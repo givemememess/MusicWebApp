@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @await Html.PartialAsync("MetategsPartial")
+    <title>@ViewData["Title"]</title>
+    @await Html.PartialAsync("CssPartial")
+
+</head>
+<body>
+
+    <header class="menu-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-x1-3 ml-auto align-self-center">
+                    <nav>
+                        <ul class="menu d-flex justify-content-end">
+                            <li class="menu__items"><a href="#">Sign In</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Search -->
+    <section class="search-bar">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-x1-5">
+                    <div class="box">
+                        <div class="container-1">
+                            <span class="icon"><i class="fa fa-search"></i></span>
+                            <input type="text" id="r1" placeholder="Search music.." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Search-->
+
+    @RenderBody()
+
+    @await Html.PartialAsync("ScriptsPartial")
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

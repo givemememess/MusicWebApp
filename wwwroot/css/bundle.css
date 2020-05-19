@@ -1,0 +1,166 @@
+#elastic {
+    display: block;
+    margin: 40px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.elastic li {
+    transition: all ease 500ms;
+    
+}
+
+.elastic li.hide {
+    display: none;
+}
+
+.m-music-player.hide {
+    display: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar {
+    padding: 30px 0;
+    color: white;
+    background: url('https://lingua-airlines.ru/wp-content/uploads/2019/09/photo-1499415479124-43c32433a620-1024x576.jpeg');
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: left;
+    background-color: rgb(23, 18, 37);
+    
+}
+
+.menu__items {
+    margin-left: 37px;
+}
+
+.menu__items a {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.menu__items a:hover {
+    text-decoration: none;
+    color: #bbbaba;
+}
+
+.search-bar {
+    margin-top: 20px;
+    
+}
+
+/* search */ 
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.container-1 input#r1{
+    width: 300px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+
+  .container-1 input#r1::-webkit-input-placeholder {
+    color: #65737e;
+ }
+  
+ .container-1 input#r1:-moz-placeholder { /* Firefox 18- */
+    color: #65737e;  
+ }
+  
+ .container-1 input#r1::-moz-placeholder {  /* Firefox 19+ */
+    color: #65737e;  
+ }
+  
+ .container-1 input#r1:-ms-input-placeholder {  
+    color: #65737e;  
+ }
+
+
+ .container-1 .icon{
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+  }
+
+  .container-1 input#r1:hover, .container-1 input#r1:focus, .container-1 input#r1:active{
+    outline:none;
+    background: #ffffff;
+  }
+
+  .container-1 input#r1{
+    width: 300px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #262626;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+   
+  }
+
+/* End-search */
+
+.card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+/* Content */
+
+.m-music-player {
+    margin: 20px 0 0 40px;
+}
+
+/* Number-1 */
+.m-content-num2 {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin: 2% 0 0 5%;
+}
+
+.audio {
+    width: 200px;
+    margin-left: -15px; 
+}
+
+.youtube {
+    margin-left: 5px
+}
